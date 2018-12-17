@@ -1,0 +1,168 @@
+<CustButton@Button>:
+    font_size:32
+    disabled: True
+    background_color: 0.5,0.5,0.5,.5
+
+
+<TypeGridLayout>:
+    id:typer
+    display:entry
+    rows:6
+    padding:20
+    spacing:10
+
+    BoxLayout:
+        padding:20,20
+
+        TextInput:
+            id: third_roter
+            font_size: 32
+            multiline:False
+            text: "1"
+            disabled: True
+        TextInput:
+            id: second_roter
+            font_size: 32
+            text: "1"
+            disabled: True
+            multiline:False
+        TextInput:
+            id: first_roter
+            font_size: 32
+            text: "1"
+            disabled: True
+            multiline:False
+
+    BoxLayout:
+        TextInput:
+            id: entry
+            font_size: 32
+            multiline:True
+            disabled: True
+
+
+    BoxLayout:
+        spacing:10
+        CustButton:
+            id: Q
+            text: "Q"
+        CustButton:
+            id: W
+            text: "W"
+            on_press: entry.text += self.text
+        CustButton:
+            id: E
+            text: "E"
+            on_press: entry.text += self.text
+        CustButton:
+            id: R
+            text: "R"
+            on_press: entry.text += self.text
+        CustButton:
+            id: T
+            text: "T"
+            on_press: entry.text += self.text
+        CustButton:
+            id: Y
+            text: "Y"
+            on_press: entry.text += self.text
+        CustButton:
+            id: U
+            text: "U"
+            on_press: entry.text += self.text
+        CustButton:
+            id: I
+            text: "I"
+            on_press: entry.text += self.text
+        CustButton:
+            id: O
+            text: "O"
+            on_press: entry.text += self.text
+        CustButton:
+            id: P
+            text: "P"
+            on_press: entry.text += self.text
+
+
+    BoxLayout:
+        spacing:10
+        CustButton:
+            id: A
+            text: "A"
+            on_press: entry.text += self.text
+        CustButton:
+            id: S
+            text: "S"
+            on_press: entry.text += self.text
+        CustButton:
+            id: D
+            text: "D"
+            on_press: entry.text += self.text
+        CustButton:
+            id: F
+            text: "F"
+            on_press: entry.text += self.text
+        CustButton:
+            id: G
+            text: "G"
+            on_press: entry.text += self.text
+        CustButton:
+            id: H
+            text: "H"
+            on_press: entry.text += self.text
+        CustButton:
+            id: J
+            text: "J"
+            on_press: entry.text += self.text
+        CustButton:
+            id: K
+            text: "K"
+            on_press: entry.text += self.text
+        CustButton:
+            id: L
+            text: "L"
+            on_press: entry.text += self.text
+    BoxLayout:
+        spacing:10
+        CustButton:
+            id: Z
+            text: "Z"
+            on_press: entry.text += self.text
+        CustButton:
+            id: X
+            text: "X"
+            on_press: entry.text += self.text
+        CustButton:
+            id: C
+            text: "C"
+            on_press: entry.text += self.text
+        CustButton:
+            id: V
+            text: "V"
+            on_press: entry.text += self.text
+        CustButton:
+            id: B
+            text: "B"
+            on_press: entry.text += self.text
+        CustButton:
+            id: N
+            text: "N"
+            on_press: entry.text += self.text
+        CustButton:
+            id: M
+            text: "M"
+            on_press: entry.text += self.text
+    BoxLayout:
+        spacing:10
+        CustButton:
+            text: "Back of Machine"
+            on_press:
+            disabled: False
+        CustButton:
+            text: "SpaceBar"
+            on_press: entry.text += " "
+
+        CustButton:
+            text: "Exit"
+            on_press: app.Exit()
+            disabled: False
